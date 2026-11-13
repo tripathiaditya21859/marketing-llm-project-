@@ -1,0 +1,1 @@
+export default function ModulePage({title,description,eyebrow="WORKSPACE"}){return <div className="page-heading"><div><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="muted">{description}</p></div><span className="pill">Ready for integration</span></div>;}

@@ -1,0 +1,2 @@
+# Large model weights are stored with Git LFS (GitHub rejects normal files over 100 MB)
+*.safetensors filter=lfs diff=lfs merge=lfs -text

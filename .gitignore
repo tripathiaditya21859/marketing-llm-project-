@@ -1,0 +1,39 @@
+# ===== Secrets and personal data - never commit =====
+.env
+*.env
+!.env.example
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Files uploaded by companies and their private search indexes
+Moseta_AI/uploads/
+Moseta_AI/knowledge_base/org_*/
+
+# ===== Environments, caches, build output =====
+.venv/
+venv/
+node_modules/
+dist/
+.vite/
+__pycache__/
+*.pyc
+.cache/
+*.log
+
+# ===== Duplicate copies of the model files in the Moseta_AI root =====
+# (the app loads the single real copy from Moseta_AI/models/Qwen2.5-0.5B-Instruct)
+/Moseta_AI/model.safetensors
+/Moseta_AI/config.json
+/Moseta_AI/generation_config.json
+/Moseta_AI/tokenizer.json
+/Moseta_AI/tokenizer_config.json
+/Moseta_AI/merges (1).txt
+/Moseta_AI/vocab (1).json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
